@@ -1,4 +1,3 @@
-
 # ===== 1. Importer les bibliothèques =====
 import pandas as pd
 import mlflow
@@ -77,7 +76,9 @@ def lancer_essai(nom, n_estimators, max_depth, colonnes):
         # --- Enregistrer le modèle ---
         mlflow.sklearn.log_model(
             sk_model=model,
-            name="model"
+            name="model",
+            # Type interne des arbres sklearn : sûr car le modèle est créé ici
+            skops_trusted_types=["sklearn.tree._tree.Tree"]
         )
 
         # Afficher les résultats

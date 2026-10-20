@@ -1,0 +1,24 @@
+artifact_path: file:C:/Users/LENOVO/Desktop/5eme cycle ing/MLOPS/TP1/mlruns/1/models/m-d0db640e6e86444493256e4c9040b9fa/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.0
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+mlflow_version: 3.17.1
+model_id: m-d0db640e6e86444493256e4c9040b9fa
+model_size_bytes: 904617
+model_uuid: m-d0db640e6e86444493256e4c9040b9fa
+prompts: null
+run_id: 0f68f6a072d94f918a2f0dcedd0c57d7
+utc_time_created: '2026-10-20 09:24:19.879461'
